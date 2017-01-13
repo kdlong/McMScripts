@@ -87,7 +87,7 @@ def exitDuplicateField(file_in_, field_):
 def getFields(csvfile_, file_in_):
     # List of indices for each field in CSV file
     list = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
-             -1, -1, -1, -1]
+             -1, -1, -1, -1, -1]
     header = csv.reader(csvfile_).next()
     for ind, field in enumerate(header):
         if field in ['Dataset name', 'Dataset Name', 'Dataset', 'dataset']:
@@ -193,6 +193,10 @@ def getFields(csvfile_, file_in_):
             if list[20] > -1:
                 exitDuplicateField(file_in_, "Notes")
             list[20] = ind
+        elif field in ['Path to fragment', 'path to fragment']:
+            if list[21] > -1:
+                exitDuplicateField(file_in_, "Path to fragment")
+            list[21] = ind
         elif field in ['JobId', 'JobId xsec', 'Local gridpack location', 'Local LHE', 'LHE']:
             continue
         else:
@@ -302,6 +306,8 @@ def fillFields(csvfile, fields, campaign, PWG, notCreate_):
                 tmpReq.setMcMFrag(createLHEProducer(row[fields[18]], ""))
         if fields[20] > -1:
             tmpReq.setNotes(row[fields[20]])
+        if fields[21] > -1:
+            tmpReq.setMcMFrag("".join(open(row[fields[21]]).readlines()))
         requests.append(tmpReq)
     return requests, num_requests
 

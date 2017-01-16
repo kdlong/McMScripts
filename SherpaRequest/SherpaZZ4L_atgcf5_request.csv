@@ -1,0 +1,15 @@
+prepid,Dataset name,path to fragment
+SMP-RunIISummer15GS-00115,ZZTo4L_aTGC-f5_fg-0p0038_fz-0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-0p0038_fz-0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00116,ZZTo4L_aTGC-f5_fg-0p0038_fz-0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-0p0038_fz-0p003_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00117,ZZTo4L_aTGC-f5_fg-0p0038_fz-m0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-0p0038_fz-m0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00118,ZZTo4L_aTGC-f5_fg-0p0038_fz-m0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-0p0038_fz-m0p003_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00119,ZZTo4L_aTGC-f5_fg-m0p0019_fz-0_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0019_fz-0_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00120,ZZTo4L_aTGC-f5_fg-m0p0019_fz-0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0019_fz-0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00121,ZZTo4L_aTGC-f5_fg-m0p0019_fz-0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0019_fz-0p003_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00122,ZZTo4L_aTGC-f5_fg-m0p0019_fz-m0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0019_fz-m0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00123,ZZTo4L_aTGC-f5_fg-m0p0019_fz-m0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0019_fz-m0p003_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00124,ZZTo4L_aTGC-f5_fg-m0p0038_fz-0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0038_fz-0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00125,ZZTo4L_aTGC-f5_fg-m0p0038_fz-0_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0038_fz-0_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00126,ZZTo4L_aTGC-f5_fg-m0p0038_fz-0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0038_fz-0p003_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00127,ZZTo4L_aTGC-f5_fg-m0p0038_fz-m0p0015_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0038_fz-m0p0015_13TeV-sherpa_fragment.py
+SMP-RunIISummer15GS-00128,ZZTo4L_aTGC-f5_fg-m0p0038_fz-m0p003_13TeV-sherpa,SherpaConfigs/ZZTo4L_aTGC-f5_fg-m0p0038_fz-m0p003_13TeV-sherpa_fragment.py

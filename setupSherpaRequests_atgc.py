@@ -12,8 +12,6 @@ from string import Template
 ##0p0019I0
 ##0p0019Im0p0015
 #0p0019I0p003
-##    "0p0038I0",
-##    "0p0019Im0p003",
 f5points = [
     "0p0038I0p0015",
     "0p0038I0p003",
@@ -51,7 +49,7 @@ vals = {
     "f5g" : "0",
     "checksum" : "0",
 }
-csv_file_name = "cloneSherpaZZ4Lrequest.csv"
+csv_file_name = "clone_SherpaZZ4L_atgcf5_request.csv"
 with open(csv_file_name, "w") as csv_file:
     csv_file.write("prepid,Dataset name,path to fragment\n")
 for i,point in enumerate(f5points):
@@ -65,5 +63,5 @@ for i,point in enumerate(f5points):
     fragment_name = "SherpaConfigs/%s_fragment.py" % name
     with open(fragment_name, "w") as out_config:
         out_config.write(config.substitute(vals))
-    with open("clone_SherpaZZ4L_atgcf5_request.csv", "a") as csv_file:
-        csv_file.write(",".join(["SMP-RunIISummer15GS-0011%i" % (5+i), name, fragment_name]) +"\n")
+    with open(csv_file_name, "a") as csv_file:
+        csv_file.write(",".join(["SMP-RunIISummer15GS-001%i" % (15+i), name, fragment_name]) +"\n")

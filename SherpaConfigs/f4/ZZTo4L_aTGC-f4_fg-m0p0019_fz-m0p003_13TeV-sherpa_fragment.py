@@ -3,7 +3,7 @@ import FWCore.ParameterSet.Config as cms
 source = cms.Source("EmptySource")
 
 generator = cms.EDFilter("SherpaGeneratorFilter",
-    SherpaProcess = cms.string('0p0019Im0p003'),
+    SherpaProcess = cms.string('m0p0019Im0p003'),
     SherpaParameters = cms.PSet(
         parameterSets = cms.vstring('MPI_Cross_Sections', 
             'Run'),
@@ -19,8 +19,8 @@ generator = cms.EDFilter("SherpaGeneratorFilter",
             ' BEAM_1 2212; BEAM_ENERGY_1 6500.;', 
             ' BEAM_2 2212; BEAM_ENERGY_2 6500.;', 
             ' MODEL SM+AGC;', 
-            ' F5_Z     0.0019', 
-            ' F5_GAMMA -0.003', 
+            ' F4_Z     -0.003', 
+            ' F4_GAMMA -0.0019', 
             ' UNITARIZATION_SCALE 1000000;', 
             ' UNITARIZATION_N 2;', 
             ' UNITARIZATION_M 1;', 
@@ -38,13 +38,13 @@ generator = cms.EDFilter("SherpaGeneratorFilter",
     ),
     filterEfficiency = cms.untracked.double(1.0),
     FetchSherpack = cms.bool(True),
-    SherpackChecksum = cms.string('ea17ad43a1dbc766fd04b74b87b79e10'),
+    SherpackChecksum = cms.string('9bbf8fd2183098654d1a951318016778'),
     SherpaResultDir = cms.string('Result'),
     SherpaPath = cms.string('./'),
     crossSection = cms.untracked.double(-1),
     maxEventsToPrint = cms.int32(0),
     SherpaPathPiece = cms.string('./'),
-    SherpackLocation = cms.string('/cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/13TeV/sherpa/V2.1.1/ZZTo4L_aTGC-f5'),
+    SherpackLocation = cms.string('/cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/13TeV/sherpa/V2.1.1/ZZTo4L_aTGC-f4'),
     SherpaDefaultWeight = cms.double(1.0)
 )
 

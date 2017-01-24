@@ -1,7 +1,9 @@
+import FWCore.ParameterSet.Config as cms
+
 source = cms.Source("EmptySource")
 
 generator = cms.EDFilter("SherpaGeneratorFilter",
-    SherpaProcess = cms.string('0p0038I0'),
+    SherpaProcess = cms.string('0p0038Im0p003'),
     SherpaParameters = cms.PSet(
         parameterSets = cms.vstring('MPI_Cross_Sections', 
             'Run'),
@@ -17,8 +19,8 @@ generator = cms.EDFilter("SherpaGeneratorFilter",
             ' BEAM_1 2212; BEAM_ENERGY_1 6500.;', 
             ' BEAM_2 2212; BEAM_ENERGY_2 6500.;', 
             ' MODEL SM+AGC;', 
-            ' F5_Z     0.0038', 
-            ' F5_GAMMA 0.0', 
+            ' F5_Z     -0.003', 
+            ' F5_GAMMA 0.0038', 
             ' UNITARIZATION_SCALE 1000000;', 
             ' UNITARIZATION_N 2;', 
             ' UNITARIZATION_M 1;', 
@@ -36,7 +38,7 @@ generator = cms.EDFilter("SherpaGeneratorFilter",
     ),
     filterEfficiency = cms.untracked.double(1.0),
     FetchSherpack = cms.bool(True),
-    SherpackChecksum = cms.string('2e7774c512cc39f9b322439f2a5869bf'),
+    SherpackChecksum = cms.string('be8494932915b2d695eca383187e6307'),
     SherpaResultDir = cms.string('Result'),
     SherpaPath = cms.string('./'),
     crossSection = cms.untracked.double(-1),

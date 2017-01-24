@@ -44,7 +44,7 @@ def getChecksum(point):
             check_line = line
             break
     return check_line.split("'")[1]
-config = Template("".join(open("SherpaConfigs/ZZ4L_template").readlines()))
+config = Template("".join(open("SherpaConfigs/ZZ4L_aTGCf5_template").readlines()))
 vals = {
     "process" : "0I0",
     "f5z" : "0",
@@ -62,7 +62,7 @@ for i,point in enumerate(f5points):
     vals["checksum"] = getChecksum(point)
     name = "ZZTo4L_aTGC-f5_fg-%s_fz-%s_13TeV-sherpa" % (f5g, f5z)
 
-    fragment_name = "SherpaConfigs/%s_fragment.py" % name
+    fragment_name = "SherpaConfigs/f5/%s_fragment.py" % name
     with open(fragment_name, "w") as out_config:
         out_config.write(config.substitute(vals))
     with open(csv_file_name, "a") as csv_file:
